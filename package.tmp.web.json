@@ -4,17 +4,18 @@
     "H & D GmbH Open Source <contact-oss@h-d-gmbh.de>"
   ],
   "description": "Simple highlight searched snippets\n",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/hd-gmbh-dev/search-highlight-wasm"
   },
   "files": [
-    "search-highlight-wasm_bg.wasm",
-    "search-highlight-wasm.js",
-    "search-highlight-wasm.d.ts"
+    "search_highlight_wasm_bg.wasm",
+    "search_highlight_wasm_bg.wasm.d.ts",
+    "search_highlight_wasm.d.ts",
+    "search_highlight_wasm.js"
   ],
-  "main": "search-highlight-wasm.js",
-  "types": "search-highlight-wasm.d.ts"
+  "main": "search_highlight_wasm.js",
+  "types": "search_highlight_wasm.d.ts"
 }
