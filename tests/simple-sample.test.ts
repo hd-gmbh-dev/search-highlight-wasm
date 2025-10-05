@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import {
   highlight_ngram3
-} from "../pkg/";
+} from "../pkg/search_highlight_wasm";
 
 describe("minimal text search highlight via wasm", async () => {
   it("should be highlighted to expected trigram", async () => {
