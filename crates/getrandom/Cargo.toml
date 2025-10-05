@@ -11,10 +11,6 @@ categories.workspace = true
 keywords.workspace = true
 
 [dependencies]
-# getrandom_origin = { version = "0.3.3", features = ["wasm_js"], package = "getrandom"}
-js-sys = "0.3"
-wasm-bindgen.workspace = true
-
 [features]
 alloc = []
 std = []

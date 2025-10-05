@@ -274,10 +274,6 @@ dependencies = [
 [[package]]
 name = "getrandom"
 version = "0.2.16"
-dependencies = [
- "js-sys",
- "wasm-bindgen",
-]
 
 [[package]]
 name = "getrandom"
