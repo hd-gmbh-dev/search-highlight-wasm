@@ -36,7 +36,7 @@ jobs:
     - name: Download NPM Web artifact
       uses: actions/download-artifact@v4
       with:
-        name: search-highlight-wasm-pkg-web
+        name: search-highlight-wasm-web-pkg
         path: pkg
     - run: npm publish --provenance --access public
       working-directory: ./pkg
