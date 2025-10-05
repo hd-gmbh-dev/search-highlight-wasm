@@ -1,0 +1,21 @@
+[package]
+name = "getrandom"
+version = "0.2.16"
+edition.workspace = true
+description.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+categories.workspace = true
+keywords.workspace = true
+
+[dependencies]
+# getrandom_origin = { version = "0.3.3", features = ["wasm_js"], package = "getrandom"}
+js-sys = "0.3"
+wasm-bindgen.workspace = true
+
+[features]
+alloc = []
+std = []
+js = []

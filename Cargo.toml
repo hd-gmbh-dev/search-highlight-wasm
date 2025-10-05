@@ -1,0 +1,51 @@
+[workspace]
+resolver = "3"
+members = ["crates/*"]
+
+[workspace.package]
+edition = "2024"
+version = "0.1.0"
+description = """
+Simple highlight searched snippets
+"""
+rust-version = "1.89.0"
+authors = ["H & D GmbH Open Source <contact-oss@h-d-gmbh.de>"]
+license = "MIT"
+repository = "https://github.com/hd-gmbh-dev/search-highlight-wasm"
+categories = []
+keywords = []
+
+[workspace.dependencies]
+anyhow = "1.0.100"
+serde = { version = "1.0.228", features = ["derive", "rc"] }
+wasm-bindgen = { version = "0.2.104" }
+
+[package]
+name = "search-highlight-wasm"
+edition.workspace = true
+version.workspace = true
+description.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+categories.workspace = true
+keywords.workspace = true
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wasm-bindgen.workspace = true
+serde-wasm-bindgen = { version = "0.6.5" }
+tsify = { version= "0.5.5", default-features = false, features = ["js"] }
+uuid = { version = "1.18.1", features = ["js"] }
+tantivy = { version= "0.25.0", default-features = false, features = [] }
+
+[patch.crates-io]
+"getrandom" = { path = "./crates/getrandom" }
+
+
+[profile.release]
+# Tell `rustc` to optimize for small code size.
+opt-level = "s"
