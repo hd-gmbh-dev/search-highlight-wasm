@@ -2,3 +2,4 @@
 set -e
 # export RUSTFLAGS='--cfg getrandom_backend="wasm_js"'
 wasm-pack build --release --target nodejs --reference-types --no-default-features
+cp ./package.tmp.json pkg/package.json
